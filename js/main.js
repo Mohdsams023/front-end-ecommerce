@@ -1,7 +1,7 @@
 // Header and footer added dynamycally
 $(function () {
-    $('#header').load('includes/header.html');
-    $('#footer').load('includes/footer.html');
+    $('#header').load('/includes/header.html');
+    $('#footer').load('/includes/footer.html');
 });
 
 // login Validation 
