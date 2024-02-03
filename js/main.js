@@ -1,9 +1,3 @@
-// header and footer added home page
-$(function () {
-  $('#header').load('includes/header.html');
-  $('#footer').load('includes/footer.html');
-});
-
 
 // login Validation 
 function validateLogin() {
