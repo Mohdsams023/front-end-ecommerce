@@ -18,6 +18,6 @@ function validateLogin() {
 
   // Header and footer added All Pages dynamycally
 $(function () {
-  $('#header').load('../includes/header.html');
-  $('#footer').load('../includes/footer.html');
+  $('#header').load('./includes/header.html');
+  $('#footer').load('./includes/footer.html');
 });
