@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Style for header */
 
 .logo {
@@ -23,13 +29,6 @@
     border-bottom-right-radius: 0px;
     margin-left: 1px;
     height: 38px;
-}
-
-
-@media (min-width: 600px) {
-    .search-field {
-        width: 50%;
-    }
 }
 
 /* Style main page */
@@ -130,26 +129,7 @@
     font-size: 18px;
 }
 
-/* Styling for responsive */
-
-@media (max-width: 599px) {
-    .search-field {
-        width: 75%;
-    }
-
-    .hero-section {
-        width: 100%;
-        height: 40vh;
-    }
-
-    .sub-footer {
-        flex-direction: column;
-    }
-}
-
 /* Style Contact page */
-
-
 .form-label {
     font-weight: bold;
 }
@@ -184,6 +164,45 @@
     display: none;
 }
 
+
+.image-wapper {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wapper img {
+    width: 100%;
+    height: 300px;
+}
+
+/* Product page css */
+.pro-card {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+/* css for medium screens */
+@media (min-width: 900px) {
+    .search-field {
+        width: 50%;
+    }
+}
+
+
+@media (max-width:900px) {
+    .search-field {
+        width: 75%;
+    }
+}
+
 @media screen and ((max-width: 1000px) and (min-width: 500px)) {
     .product-card {
         margin: 0.5rem;
@@ -199,6 +218,8 @@
     }
 }
 
+/* CSS for Small device */
+
 @media screen and (max-width: 500px) {
     .product-card {
         margin: 0.5rem;
@@ -209,16 +230,31 @@
     .smallCorousel {
         display: block;
     }
+
+    .image-wapper {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-wapper img {
+        width: 100%;
+        height: 300px;
+    }
 }
 
-.image-wapper {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@media (max-width: 599px) {
+    .search-field {
+        width: 75%;
+    }
 
-.image-wapper img {
-    width: 100%;
-    height: 200px;
+    .hero-section {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .sub-footer {
+        flex-direction: column;
+    }
 }
